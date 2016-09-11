@@ -1,0 +1,9 @@
+*.aux
+*.gaux
+*.log
+*.out
+*.pdf
+*.idx
+*.gtex
+*.glog
+*.DS_Store
