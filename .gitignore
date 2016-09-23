@@ -2,7 +2,8 @@
 *.gaux
 *.log
 *.out
-*.pdf
 *.idx
 *.gtex
 *.glog
+*.fls
+*.fdb_latexmk
