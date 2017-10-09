@@ -37,12 +37,14 @@
 \usepackage[compact,nobottomtitles*]{titlesec}
 \titlespacing*{\chapter}{0pt}{-30pt}{0pt}
 \titlespacing*{\section}{0pt}{*0}{*1}
-\titlespacing*{\subsection}{0pt}{*0}{*1}
-\titlespacing*{\subsubsection}{0pt}{*0}{*1}
-\titleformat{\chapter} {\normalfont\LARGE\sc\center}{\thechapter}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{*0}{*0}
+\titlespacing*{\subsubsubsection}{0pt}{10pt}{*0}
+\titleformat{\part} {\normalfont\Huge\sc\center}{\thechapter}{1em}{}
+\titleformat{\chapter} {\normalfont\LARGE\sc\center}{\thechapter}{1em}{}
 \titleformat{\section} {\normalfont\Large\sc\center}{\thesection}{1em}{}
-\titleformat{\subsection} {\normalfont\large\sc\center}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\normalfont\normalsize\sc\center}{\thesubsubsection}{1em}{}
+\titleformat{\subsection} {\normalfont\Large\sc\center}{\thesubsubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\large\sc\center}{\thesubsubsubsection}{1em}{}
+\titleformat{\paragraph}{\normalfont\normalsize\sc\center}{\thesubsubsubsection}{1em}{}
 
 \newcommand{\nocontentsline}[3]{}
 \newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup} %% lets you have sections that don't appear in the table of contents
@@ -120,6 +122,6 @@
 
 \pagestyle{empty}
 
- \subsection{Canticum Evangelicum} \subsubsection{} \greannotation{III g} \index[Canticum Evangelicum]{Benedictus} \label{Benedictus (Canticum Evangelicum)} \grecommentary[3pt]{Lc 1:68-79} \grechangestyle{initial}{\fontsize{1}{1}\selectfont} \grechangestyle{initial}{\fontsize{36}{36}\selectfont} \grechangedim{maxbaroffsettextleft@nobar}{12 cm}{scalable} \grechangedim{spaceabovelines}{0.75cm}{scalable} \gresetlyriccentering{vowel}  \grechangedim{spaceabovelines}{0.4 cm}{scalable} \gregorioscore{chants/benedictus-solemn8G-roman}
+ \subsubsection{Canticum Evangelicum} \paragraph{} \greannotation{III g} \index[Canticum Evangelicum]{Benedictus} \label{Benedictus (Canticum Evangelicum)} \grecommentary[3pt]{Lc 1:68-79} \grechangestyle{initial}{\fontsize{1}{1}\selectfont} \grechangestyle{initial}{\fontsize{36}{36}\selectfont} \grechangedim{maxbaroffsettextleft@nobar}{12 cm}{scalable} \grechangedim{spaceabovelines}{0.75cm}{scalable} \gresetlyriccentering{vowel}  \grechangedim{spaceabovelines}{0.4 cm}{scalable} \gregorioscore{chants/benedictus-solemn8G-roman}
 
   \end{document}

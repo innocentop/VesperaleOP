@@ -37,12 +37,14 @@
 \usepackage[compact,nobottomtitles*]{titlesec}
 \titlespacing*{\chapter}{0pt}{-30pt}{0pt}
 \titlespacing*{\section}{0pt}{*0}{*1}
-\titlespacing*{\subsection}{0pt}{*0}{*1}
-\titlespacing*{\subsubsection}{0pt}{*0}{*1}
-\titleformat{\chapter} {\normalfont\LARGE\sc\center}{\thechapter}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{*0}{*0}
+\titlespacing*{\subsubsubsection}{0pt}{10pt}{*0}
+\titleformat{\part} {\normalfont\Huge\sc\center}{\thechapter}{1em}{}
+\titleformat{\chapter} {\normalfont\LARGE\sc\center}{\thechapter}{1em}{}
 \titleformat{\section} {\normalfont\Large\sc\center}{\thesection}{1em}{}
-\titleformat{\subsection} {\normalfont\large\sc\center}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\normalfont\normalsize\sc\center}{\thesubsubsection}{1em}{}
+\titleformat{\subsection} {\normalfont\Large\sc\center}{\thesubsubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\large\sc\center}{\thesubsubsubsection}{1em}{}
+\titleformat{\paragraph}{\normalfont\normalsize\sc\center}{\thesubsubsubsection}{1em}{}
 
 \newcommand{\nocontentsline}[3]{}
 \newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup} %% lets you have sections that don't appear in the table of contents
@@ -122,35 +124,35 @@
 
 \section{Second Vespers}
     \index[Varia]{Deus in adiutorium} \label{Deus in adiutorium (Varia)} \grecommentary[0pt]{} \gresetinitiallines{1} \grechangedim{spaceabovelines}{0.25 cm}{scalable} \grechangedim{maxbaroffsettextleft}{0 cm}{scalable} \gregorioscore{chants/misc.deus_in_adjutorium-T} \grechangedim{spaceabovelines}{0 cm}{scalable} \grechangedim{maxbaroffsettextleft}{0.6 cm}{scalable}
- \subsection{Hymnus}  \greannotation{VIII} \index[Hymnus]{Lucis creator} \label{Lucis creator (Hymnus)} \grecommentary[10pt]{\emph{Lucis creator optime}} \gresetinitiallines{1} \grechangestyle{initial}{\fontsize{36}{36}\selectfont} \grechangedim{maxbaroffsettextleft@nobar}{12 cm}{scalable} \grechangedim{spaceabovelines}{0.5cm}{scalable} \gresetlyriccentering{syllable}   \gregorioscore{chants/hy--lucis-creator-english}    
- \subsection{Antiphona}  \greannotation{VII d} \index[Antiphona]{Dixit Dominus} \label{Dixit Dominus (Antiphona)} \grecommentary[0pt]{Ps 109:1} \gresetinitiallines{1} \gresetlyriccentering{vowel} \grechangedim{maxbaroffsettextleft}{0 cm}{scalable} \gregorioscore{chants/an--dixit_dominus_domino_meo--dominican-mss}  \grechangedim{maxbaroffsettextleft}{0.6 cm}{scalable}
- \subsection{Psalm 109} \subsubsection{The Messiah, king and priest}  \index[Psalmus]{Psalm 109} \label{Psalm 109 (Psalmus)} \emph{Christ’s reign will last until all his enemies are made subject to him (1~Cor 15:25).}    \vspace{5pt} \par \input{psalms/psalm109english3-3}
- \subsection{Antiphona}  \greannotation{T. per.} \index[Antiphona]{Nos qui vivimus} \label{Nos qui vivimus (Antiphona)} \grecommentary[0pt]{Ps 113b:18} \gresetinitiallines{1} \gresetlyriccentering{vowel} \grechangedim{maxbaroffsettextleft}{0 cm}{scalable} \gregorioscore{chants/an--nos_qui_vivimus_dominican_peregrinus}  \grechangedim{maxbaroffsettextleft}{0.6 cm}{scalable}
- \subsection{Psalm 113B} \subsubsection{Praise of the true God}  \index[Psalmus]{Psalm 113B} \label{Psalm 113B (Psalmus)} \emph{You have renounced idol worship to serve the living and true God (1 Thessalonians 1:9).}    \vspace{5pt} \par \input{psalms/psalm113Benglish3-3}
+ \subsubsection{Hymnus}  \greannotation{VIII} \index[Hymnus]{Lucis creator} \label{Lucis creator (Hymnus)} \grecommentary[10pt]{\emph{Lucis creator optime}} \gresetinitiallines{1} \grechangestyle{initial}{\fontsize{36}{36}\selectfont} \grechangedim{maxbaroffsettextleft@nobar}{12 cm}{scalable} \grechangedim{spaceabovelines}{0.5cm}{scalable} \gresetlyriccentering{syllable}   \gregorioscore{chants/hy--lucis-creator-english}    
+ \subsubsection{Antiphona}  \greannotation{VII d} \index[Antiphona]{Dixit Dominus} \label{Dixit Dominus (Antiphona)} \grecommentary[0pt]{Ps 109:1} \gresetinitiallines{1} \gresetlyriccentering{vowel} \grechangedim{maxbaroffsettextleft}{0 cm}{scalable} \gregorioscore{chants/an--dixit_dominus_domino_meo--dominican-mss}  \grechangedim{maxbaroffsettextleft}{0.6 cm}{scalable}
+ \subsubsection{Psalm 109} \paragraph{The Messiah, king and priest}  \index[Psalmus]{Psalm 109} \label{Psalm 109 (Psalmus)} \emph{Christ’s reign will last until all his enemies are made subject to him (1~Cor 15:25).}    \vspace{5pt} \par \input{psalms/psalm109english3-3}
+ \subsubsection{Antiphona}  \greannotation{T. per.} \index[Antiphona]{Nos qui vivimus} \label{Nos qui vivimus (Antiphona)} \grecommentary[0pt]{Ps 113b:18} \gresetinitiallines{1} \gresetlyriccentering{vowel} \grechangedim{maxbaroffsettextleft}{0 cm}{scalable} \gregorioscore{chants/an--nos_qui_vivimus_dominican_peregrinus}  \grechangedim{maxbaroffsettextleft}{0.6 cm}{scalable}
+ \subsubsection{Psalm 113B} \paragraph{Praise of the true God}  \index[Psalmus]{Psalm 113B} \label{Psalm 113B (Psalmus)} \emph{You have renounced idol worship to serve the living and true God (1 Thessalonians 1:9).}    \vspace{5pt} \par \input{psalms/psalm113Benglish3-3}
 
 
 %%This is the version for Week II and IV
- \subsection{Canticum} \subsubsection{The wedding of the Lamb} \greannotation{} \index[Canticum]{Salus et gloria} \label{Salus et gloria (Canticum)} \grecommentary[5pt]{Cf. Ap 19:1-2, 5-7 [AR]} \gresetinitiallines{1} \gresetlyriccentering{syllable}  \gregorioscore{chants/canticle--salus-et-honor--d--english}
+ \subsubsection{Canticum} \paragraph{The wedding of the Lamb} \greannotation{} \index[Canticum]{Salus et gloria} \label{Salus et gloria (Canticum)} \grecommentary[5pt]{Cf. Ap 19:1-2, 5-7 [AR]} \gresetinitiallines{1} \gresetlyriccentering{syllable}  \gregorioscore{chants/canticle--salus-et-honor--d--english}
 
 \newpage
 
- \subsection{Lectio brevis}     \hfill 2 Th 2:13-14    \input{readings/lectio_brevis_2.Th.2.13-14.tex}
+ \subsubsection{Lectio brevis}     \hfill 2 Th 2:13-14    \input{readings/lectio_brevis_2.Th.2.13-14.tex}
 
 
- \subsection{Responsorium brevis}  \greannotation{VI} \index[Responsorium brevis]{Magnus Dominus noster} \label{Magnus Dominus noster (Responsorium brevis)} \grecommentary[0pt]{Ps 146:5 [AR]} \gresetinitiallines{1} \gresetlyriccentering{vowel}  \gregorioscore{chants/rb--magnus_dominus_noster--solesmes}
+ \subsubsection{Responsorium brevis}  \greannotation{VI} \index[Responsorium brevis]{Magnus Dominus noster} \label{Magnus Dominus noster (Responsorium brevis)} \grecommentary[0pt]{Ps 146:5 [AR]} \gresetinitiallines{1} \gresetlyriccentering{vowel}  \gregorioscore{chants/rb--magnus_dominus_noster--solesmes}
 
- \subsection{Antiphona ad Magnificat}  \greannotation{VIII \textsc{g}} \index[Antiphona ad Magnificat]{Non omnis} \label{Non omnis (Antiphona ad Magnificat)} \grecommentary[0pt]{Mt 7:21} \gresetinitiallines{1} \grechangestyle{initial}{\fontsize{36}{36}\selectfont} \grechangedim{maxbaroffsettextleft@nobar}{12 cm}{scalable} \grechangedim{spaceabovelines}{0.5cm}{scalable} \gresetlyriccentering{vowel}   \gregorioscore{chants/an--non_omnis--dominican--id_5856} \vspace{5pt} \emph{Not everyone who says to me, ``Lord, Lord,” will enter the kingdom of heaven; but the one who does the will of my Father, who is in heaven, he will enter the kingdom of heaven, alleluia.}   
+ \subsubsection{Antiphona ad Magnificat}  \greannotation{VIII \textsc{g}} \index[Antiphona ad Magnificat]{Non omnis} \label{Non omnis (Antiphona ad Magnificat)} \grecommentary[0pt]{Mt 7:21} \gresetinitiallines{1} \grechangestyle{initial}{\fontsize{36}{36}\selectfont} \grechangedim{maxbaroffsettextleft@nobar}{12 cm}{scalable} \grechangedim{spaceabovelines}{0.5cm}{scalable} \gresetlyriccentering{vowel}   \gregorioscore{chants/an--non_omnis--dominican--id_5856} \vspace{5pt} \emph{Not everyone who says to me, ``Lord, Lord,” will enter the kingdom of heaven; but the one who does the will of my Father, who is in heaven, he will enter the kingdom of heaven, alleluia.}   
 
- \subsection{Canticum Evangelicum} \subsubsection{The soul rejoices in the Lord} \greannotation{VIII \textsc{g}} \index[Canticum Evangelicum]{Magnificat 8G} \label{Magnificat 7d (Canticum Evangelicum)} \grecommentary[5pt]{Lc 1:46-55} \gresetinitiallines{1} \gresetlyriccentering{vowel}  \gregorioscore{chants/magnificat8G} \input{chants/magnificat-translation}   
+ \subsubsection{Canticum Evangelicum} \paragraph{The soul rejoices in the Lord} \greannotation{VIII \textsc{g}} \index[Canticum Evangelicum]{Magnificat 8G} \label{Magnificat 7d (Canticum Evangelicum)} \grecommentary[5pt]{Lc 1:46-55} \gresetinitiallines{1} \gresetlyriccentering{vowel}  \gregorioscore{chants/magnificat8G} \input{chants/magnificat-translation}   
 
- \subsection{Preces}   \index[Preces]{Week II, Sunday, Second Vespers} \label{Week II, Sunday, Second Vespers (Preces)}     \input{intercessions/intercessions-ot-sunday-week-2-2nd-vespers}    
- \subsection{Pater noster}   \index[Pater noster]{Pater noster} \label{Pater noster (Pater noster)}   \grechangedim{spaceabovelines}{0.4 cm}{scalable}  \gregorioscore{chants/or--pater_noster_a--solesmes-T} \grechangedim{spaceabovelines}{0 cm}{scalable}   
+ \subsubsection{Preces}   \index[Preces]{Week II, Sunday, Second Vespers} \label{Week II, Sunday, Second Vespers (Preces)}     \input{intercessions/intercessions-ot-sunday-week-2-2nd-vespers}    
+ \subsubsection{Pater noster}   \index[Pater noster]{Pater noster} \label{Pater noster (Pater noster)}   \grechangedim{spaceabovelines}{0.4 cm}{scalable}  \gregorioscore{chants/or--pater_noster_a--solesmes-T} \grechangedim{spaceabovelines}{0 cm}{scalable}   
  
  \newpage
      
- \subsection{Oratio conclusiva}   \index[Oratio conclusiva]{26th Sunday in OT} \label{26th Sunday in OT (Oratio conclusiva)}     \input{prayers/or-ordinary-time.26}    
- \subsection{Ritus conclusionis}         \par \Vbar. The Lord be with you. \par \Rbar. And with your spirit. \par \Vbar. May almighty God bless you, the Father, and the Son, and the Holy Spirit. \par \Rbar. Amen.    
- \subsection{Benedicamus Domino}   \index[Benedicamus Domino]{Sundays} \label{Sundays (Benedicamus Domino)}      \gregorioscore{chants/misc.benedicamus.dominio.4-T}    
+ \subsubsection{Oratio conclusiva}   \index[Oratio conclusiva]{26th Sunday in OT} \label{26th Sunday in OT (Oratio conclusiva)}     \input{prayers/or-ordinary-time.26}    
+ \subsubsection{Ritus conclusionis}         \par \Vbar. The Lord be with you. \par \Rbar. And with your spirit. \par \Vbar. May almighty God bless you, the Father, and the Son, and the Holy Spirit. \par \Rbar. Amen.    
+ \subsubsection{Benedicamus Domino}   \index[Benedicamus Domino]{Sundays} \label{Sundays (Benedicamus Domino)}      \gregorioscore{chants/misc.benedicamus.dominio.4-T}    
 
 
 
