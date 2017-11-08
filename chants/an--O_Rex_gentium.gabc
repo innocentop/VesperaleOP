@@ -7,7 +7,7 @@ annotation: II;
 
 %width: 4.5;
 %height: 11;
-%spacing: smith)(;)(
+%spacing: smith);
 % Then, when gregorio encounters the following line (%%), it switches to the score, where you input the notes
 %font: GaramondPremierPro;
 %%
