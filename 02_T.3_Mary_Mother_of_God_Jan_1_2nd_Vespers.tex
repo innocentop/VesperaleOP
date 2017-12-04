@@ -115,8 +115,13 @@
 \begin{document}
 
 
-%%%Initial Matter within Body (20 May 2011)
 \raggedbottom
+
+\newcommand{\lectio}[3]{%
+  \makebox[0pt][l]{#1}%
+  \makebox[\textwidth][c]{#2}%
+  \makebox[0pt][r]{\normalsize{\textnormal{#3}}}}
+
 
 %%Combination
 \chapter[Solemnity of Mary, the Holy Mother of God]{\normalfont\large\sc\center{January 1\\The Octave Day of the Nativity of the Lord} \\ \normalfont\LARGE\sc\center{Solemnity of Mary, \\ the Holy Mother of God} \\}
